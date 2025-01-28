@@ -1,0 +1,56 @@
+/* head*/
+header {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+li {
+  margin-left: 5rem;
+}
+
+/*media*/
+@media screen and (max-width: 500px) {
+  header,
+  ul {
+    flex-direction: column;
+  }
+}
+
+/* main*/
+main {
+  padding-left: 6rem;
+}
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* media*/
+@media screen and (max-width: 700px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
