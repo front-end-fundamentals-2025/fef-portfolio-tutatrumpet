@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,26 +22,37 @@
           <a href="contact.html">
             <li>contact</li>
           </a>
+          <button id="darkmode-button">Darkmode</button>
+          <button id="lightmode-button">Lightmode</button>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>CONTACT</h1>
+      <h2>CONTACT</h2>
       <p>
         if you want to get in touch with me, fill in the form and i will contact
         you
       </p>
       <form>
-        <input type="text" value="First name" />
-        <input type="text" value="Last name" />
-        <input type="text" value="Enter e-mail here" />
-        <input type="text" value="Enter phone number here" />
-        <input type="submit" value="Submit" />
+        <div>
+          <label for="firstname">Firstname</label>
+          <input type="firstname" name="firstname" />
+        </div>
+        <div>
+          <label for="lastname">Last name</label>
+          <input type="lastname" name="Last name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="Email" />
+        </div>
+        <div>
+          <label for="tel">Phonenumber</label>
+          <input type="tel" name="Phonenumber" />
+        </div>
+        <button type="submit">submit</button>
+        <p>I will try to reach out as soon as possible!</p>
       </form>
     </main>
   </body>
-  <footer>
-    <p>I will try to reach out as soon as possible!</p>
-    <a href="index.html"> back to the main page </a>
-  </footer>
 </html>

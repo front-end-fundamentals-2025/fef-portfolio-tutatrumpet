@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   background-color: rgb(193, 236, 250);
@@ -23,10 +27,11 @@ h1 {
 .nav-links {
   list-style: none;
   display: flex;
-  color: rgb(255, 255, 255);
+
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
 }
 li {
   margin-left: 5rem;
@@ -69,4 +74,59 @@ figcaption {
       "img img"
       "img img";
   }
+}
+
+/*darkmode and lightmodebuttons*/
+#darkmode-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: darkblue;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 5rem;
+}
+
+#lightmode-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #5bc6f0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 5rem;
+}
+
+/* forms*/
+input[type="email"],
+input[type="lastname"],
+input[type="firstname"],
+input[type="tel"] {
+  width: 10rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+/* buttons*/
+button {
+  width: 10rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: rgb(111, 143, 182);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(28, 99, 187);
 }
